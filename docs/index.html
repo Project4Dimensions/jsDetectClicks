@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>jsDetectClicks</title>
+
+<meta name="description" content="jsDetectClicks: a JavaScript algorithm to determine button clicks">
+<meta name="research" content="Project4Dimensions">
+<meta name="development" content="Project4Dimensions">
+<meta name="keywords" content="jsDetectClicks JavaScript algorithm determine button clicks">
+<meta name="application-name" content="jsDetectClicks">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+<h1><small id="title">Why jsDetectClicks?</small></h1>
+<p>
+  <span>
+    jsDetectClicks is a JavaScript algorithm to determine button clicks;
+    it could be used to invoke alternate procedures.
+  </span>
+</p>
+
+<hr class="double">
+<p>
+  <input id="input0" class="input" value="" onclick="this.value=txt()[1]; jsDetectClicks('clicksMsg', 'input0', txt())" type="submit">
+</p>
+<ol><li id="clicksMsg"></li></ol>
+<hr class="double">
+
+<h2><small id="title">How to use jsDetectClicks</small></h2>
+<p>
+  <span>
+   See the example in the project’s docs folder:
+  </span>
+  <a href="//github.com/Project4Dimensions/jsDetectClicks/docs/">
+    <pre>https://github.com/Project4Dimensions/jsDetectClicks/docs/</pre>
+  </a>
+</p>
+
+<h2><small>References</small></h2>
+<p>
+  MDN contributors. 2017. “GlobalEventHandlers.onclick - Web APIs.”
+  <em>Mozilla Developer Network</em>. January 3.<br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick">
+    https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
+  </a>.
+</p>
+
+<script>
+/* validated with JSLint edition 2018-02-27 (http://jslint.com/)
+ * no errors reported (JSLint options: Assume… a browser)
+ */
+
+function txt() {
+    "use strict";
+    return [
+        "Invoke jsDetectClicks",
+        "Invoke jsDetectClicks again",
+        "Click “Invoke jsDetectClicks”",
+        "Clicked ",
+        " once",
+        " times ",
+        "(even)",
+        "(odd)"
+    ];
+}
+
+function main() {
+    "use strict";
+    document.getElementById("input0").value = txt()[0];
+    document.getElementById("clicksMsg").innerHTML = txt()[2];
+}
+
+main();
+</script>
+<script src="detect-clicks.js"></script>
+</body>
+</html>
