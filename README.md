@@ -11,13 +11,15 @@ See [`detect-clicks.js`](detect-clicks.js).
 
 ## How to use jsDetectClicks
 
-See the example in [`docs`](docs).
+See the [`detect-clicks.html`][0] HTML code.
+
+[0]: https://github.com/Project4Dimensions/project4dimensions.github.io/blob/master/js-examples/detect-clicks.html
 
 ## Demonstration
 
-[`http://project4dimensions.github.io/jsDetectClicks/`][1]
+[`https://project4dimensions.github.io/js-examples/detect-clicks.html`][1]
 
-[1]: http://project4dimensions.github.io/jsDetectClicks/
+[1]: https://project4dimensions.github.io/js-examples/detect-clicks.html
 
 ## References
 
